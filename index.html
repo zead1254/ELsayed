@@ -1,158 +1,107 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>El-Said Amin Saleh| Security Supervisor</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe Script', cursive;
-      background: #000;
-      color: #ffd700;
-      overflow-x: hidden;
-    }header {
-  padding: 60px 20px;
-  text-align: center;
-  background: linear-gradient(90deg, #111, #222);
-  box-shadow: 0 0 20px #ffd700aa;
-}
-
-header img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  box-shadow: 0 0 15px #ffd700aa;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  font-size: 3rem;
-  color: #ffd700;
-  text-shadow: 0 0 10px #ffd700cc;
-  margin: 0;
-}
-
-.section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.section h2 {
-  font-size: 2.2rem;
-  color: #ffd700;
-  border-bottom: 1px solid #ffd70055;
-  margin-bottom: 20px;
-  text-shadow: 0 0 8px #ffd700aa;
-}
-
-.section p, .section li {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #eee;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-.highlight {
-  color: #ffd700;
-  text-shadow: 0 0 5px #ffd700cc;
-}
-
-.info-box {
-  background: #111;
-  border: 1px solid #ffd70044;
-  padding: 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 0 10px #ffd70033;
-}
-
-.contact {
-  text-align: center;
-  font-size: 1.1rem;
-  margin-top: 40px;
-  color: #ddd;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  font-size: 0.9rem;
-  background: #111;
-  color: #666;
-}
-
-  </style>
-</head>
-<body>
-  <header>
-    <img src="profile.jpg" alt="Profile Picture" />
-    <h1>El-Said Amin Saleh</h1>
-    <p class="highlight">Professional Security Supervisor</p>
-  </header>  <section class="section">
-    <h2>Profile</h2>
-    <p>
-      Experienced security manager with over 20 years in security operations, public relations, safety procedures, and managing large teams. Adept at planning, supervising, and securing facilities with professionalism and leadership.
-    </p>
-  </section>  <section class="section">
-    <h2>Professional Skills</h2>
-    <ul>
-      <li>Security Management</li>
-      <li>Safety and Firefighting</li>
-      <li>Administration and Organization</li>
-      <li>Public Relations</li>
-      <li>Team Leadership</li>
-      <li>Communication and Coordination</li>
-      <li>Training and Supervision</li>
-      <li>Leadership and Personal Effectiveness</li>
-      <li>Strong Interpersonal & Communication Skills</li>
-      <li>Teamwork & Crisis Management</li>
-      <li>Working Under Pressure</li>
-      <li>Recruiting, Training & Supervising Security Staff</li>
-    </ul>
-  </section>  <section class="section">
-    <h2>Career History</h2>
-    <ul>
-      <li><strong>General Supervisor – Security</strong> – Elsewedy Electric Infrastructure – Mostakbal Misr Project (09/2023)</li>
-      <li><strong>General Supervisor – Security</strong> – JVACEE, Julius Nyerere Hydropower Project – Tanzania (04/2019 to 02/2023)</li>
-      <li><strong>Field Security Manager</strong> – Elsewedy Electric PSP – Beni Suef Power Plant – Egypt (12/2018)</li>
-      <li><strong>General Supervisor – Security</strong> – Elsewedy Electric PSP – Egypt (01/2018)</li>
-      <li><strong>Security Supervisor</strong> – Elsewedy Electric PSP – Egypt (10/2016)</li>
-      <li><strong>Officer</strong> – Egyptian Armed Forces (07/1991 to 07/2016)</li>
-    </ul>
-  </section>  <section class="section">
-    <h2>Education</h2>
-    <p>Diploma – Industrial Secondary</p>
-  </section>  <section class="section">
-    <h2>Personal Information</h2>
-    <ul>
-      <li><strong>Date of Birth:</strong> 13/04/1975</li>
-      <li><strong>Marital Status:</strong> Married with 4 children</li>
-      <li><strong>Nationality:</strong> Egyptian</li>
-      <li><strong>Place of Birth:</strong> El-Gharbeya</li>
-      <li><strong>Religion:</strong> Muslim</li>
-      <li><strong>Military Service:</strong> Performed</li>
-      <li><strong>National ID:</strong> 27504131601638</li>
-    </ul>
-  </section>  <section class="section contact">
-    <h2>Contact</h2>
-    <p><strong>Phone:</strong> 0128 603 9353</p>
-    <p><strong>Email:</strong> elsayed.aminy10s@gmail.com</p>
-    <p><strong>Location:</strong> Hanout, Zefta, El-Gharbeya</p>
- <section class="section">
-    <h2>Photo Gallery</h2>
-    <div class="gallery">
-      <img src="work1.jpg" alt="At Work Site 1" />
-      <img src="work2.jpg" alt="Security Patrol" />
-      <img src="work3.jpg" alt="Power Station Supervision" />
-      <img src="work4.jpg" alt="Fire Control Drill" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr. El-Sayed Amin – Security Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Welcome Popup -->
+    <div id="welcome-popup" class="popup-overlay">
+      <div class="popup-content">
+        <h2>🚨 Welcome to the Portfolio of Mr. El-Sayed Amin</h2>
+        <p>Are you ready to explore his security expertise?</p>
+        <button onclick="closePopup()">Enter</button>
+      </div>
     </div>
-  </section>
- <footer>
-    &copy; 2025 The Boss | Security Portfolio Website
-  </footer>
-</body>
+
+    <!-- Background Audio -->
+    <audio id="welcome-audio" autoplay hidden>
+      <source src="welcome.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Background Elements (Police Themed) -->
+    <div class="animated-bg">
+      <div class="icon icon-camera"></div>
+      <div class="icon icon-badge"></div>
+      <div class="icon icon-light"></div>
+      <div class="icon icon-shield"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <header>
+        <img src="profile.jpg" alt="El-Sayed Amin" class="profile-pic" />
+        <h1>Mr. El-Sayed Amin</h1>
+        <h2>🔐 Security Supervisor</h2>
+      </header>
+
+      <section class="contact">
+        <p>📞 <a href="tel:+201286039353">+20 128 603 9353</a></p>
+        <p>📧 <a href="mailto:elsayed.aminy10s@gmail.com">elsayed.aminy10s@gmail.com</a></p>
+        <p>📍 Hanout, Zefta, El-Gharbeya, Egypt</p>
+      </section>
+
+      <section class="profile">
+        <h3>👤 Profile</h3>
+        <p>
+          Experienced security manager with over 20 years in operations, public relations, and safety. Skilled in team leadership, facility protection, training, and strategic supervision. Known for professionalism and effective coordination under pressure.
+        </p>
+      </section>
+
+      <section class="skills">
+        <h3>🛡️ Professional Skills</h3>
+        <ul>
+          <li>Security Management & Risk Control</li>
+          <li>Safety & Firefighting</li>
+          <li>Public Relations & Communication</li>
+          <li>Team Leadership & Crisis Management</li>
+          <li>Training & Supervision</li>
+          <li>Recruiting & Managing Security Staff</li>
+        </ul>
+      </section>
+
+      <section class="career">
+        <h3>📂 Career History</h3>
+        <ul>
+          <li>Security Supervisor, Elsewedy Electric Infrastructure – Mostakbal Misr (2023)</li>
+          <li>Security Supervisor, JVACEE – Julius Nyerere Project, Tanzania (2019–2023)</li>
+          <li>Field Security Manager, Elsewedy Electric PSP – Beni Suef (2018)</li>
+          <li>Security Officer, Egyptian Armed Forces (1991–2016)</li>
+        </ul>
+      </section>
+
+      <section class="gallery">
+        <h3>📸 Work in Action</h3>
+        <div class="images-row">
+          <img src="work1.jpg" alt="Work 1" />
+          <img src="work2.jpg" alt="Work 2" />
+          <img src="work3.jpg" alt="Work 3" />
+          <img src="work4.jpg" alt="Work 4" />
+        </div>
+      </section>
+
+      <section class="info">
+        <h3>📚 Education & Info</h3>
+        <ul>
+          <li>🎓 Diploma – Industrial Secondary</li>
+          <li>🗓️ Date of Birth: 13/04/1975</li>
+          <li>👨‍👩‍👧‍👦 Married with 4 children</li>
+          <li>🌍 Nationality: Egyptian</li>
+          <li>🧭 Place of Birth: El-Gharbeya</li>
+          <li>🎖️ Military Service: Completed</li>
+          <li>🆔 National ID: 27504131601638</li>
+          <li>🕌 Religion: Muslim</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>© 2025 Dr. Zeyad El-Sayed | All rights reserved</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
