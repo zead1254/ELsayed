@@ -3,105 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> El-Sayed Amin – Security Portfolio</title>
+    <title>El-Sayed Amin – Security Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Welcome Popup -->
-    <div id="welcome-popup" class="popup-overlay">
+    <!-- 🔹 فيديو الخلفية -->
+    <video autoplay muted loop id="bg-video">
+      <source src="background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+
+    <!-- 🔹 رسالة الترحيب (تظهر أولاً) -->
+    <div id="welcome-popup" class="popup-overlay" style="display: flex;">
       <div class="popup-content">
-        <h2>🚨 Welcome to the Portfolio of  El-Sayed Amin</h2>
+        <h2>🚨 Welcome to the Portfolio of El-Sayed Amin</h2>
         <p>Are you ready to explore his security expertise?</p>
         <button onclick="closePopup()">Enter</button>
       </div>
     </div>
 
-    <!-- Background Audio -->
-    <audio id="welcome-audio" autoplay hidden>
+    <!-- 🔹 الصوت (يشتغل بعد الضغط على Enter) -->
+    <audio id="welcome-audio" hidden>
       <source src="welcome.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
 
-    <!-- Background Elements (Police Themed) -->
-    <div class="animated-bg">
-      <div class="icon icon-camera"></div>
-      <div class="icon icon-badge"></div>
-      <div class="icon icon-light"></div>
-      <div class="icon icon-shield"></div>
-    </div>
+    <!-- 🔹 باقي المحتوى (مخفي في البداية) -->
+    <div id="main-content" style="display: none;">
+      <!-- خلفية الأيقونات المتحركة -->
+      <div class="animated-bg">
+        <div class="icon icon-camera"></div>
+        <div class="icon icon-badge"></div>
+        <div class="icon icon-light"></div>
+        <div class="icon icon-shield"></div>
+      </div>
 
-    <!-- Main Container -->
-    <div class="container">
-      <header>
-        <img src="profile.jpg" alt="El-Sayed Amin" class="profile-pic" />
-        <h1>Mr. El-Sayed Amin</h1>
-        <h2>🔐 Security Supervisor</h2>
-      </header>
+      <!-- المحتوى الرئيسي -->
+      <div class="container">
+        <header>
+          <img src="profile.jpg" alt="El-Sayed Amin" class="profile-pic" />
+          <h1>El-Sayed Amin</h1>
+          <h2>🔐 Security Supervisor</h2>
+        </header>
 
-      <section class="contact">
-        <p>📞 <a href="tel:+201286039353">+20 128 603 9353</a></p>
-        <p>📧 <a href="mailto:elsayed.aminy10s@gmail.com">elsayed.aminy10s@gmail.com</a></p>
-        <p>📍 Hanout, Zefta, El-Gharbeya, Egypt</p>
-      </section>
+        <section class="contact">
+          <p>📞 <a href="tel:+201286039353">+20 128 603 9353</a></p>
+          <p>📧 <a href="mailto:elsayed.aminy10s@gmail.com">elsayed.aminy10s@gmail.com</a></p>
+          <p>📍 Hanout, Zefta, El-Gharbeya, Egypt</p>
+        </section>
 
-      <section class="profile">
-        <h3>👤 Profile</h3>
-        <p>
-          Experienced security manager with over 20 years in operations, public relations, and safety. Skilled in team leadership, facility protection, training, and strategic supervision. Known for professionalism and effective coordination under pressure.
-        </p>
-      </section>
+        <section class="profile">
+          <h3>👤 Profile</h3>
+          <p>
+            Experienced security manager with over 20 years in operations, public relations, and safety. Skilled in team leadership, facility protection, training, and strategic supervision. Known for professionalism and effective coordination under pressure.
+          </p>
+        </section>
 
-      <section class="skills">
-        <h3>🛡️ Professional Skills</h3>
-        <ul>
-          <li>Security Management & Risk Control</li>
-          <li>Safety & Firefighting</li>
-          <li>Public Relations & Communication</li>
-          <li>Team Leadership & Crisis Management</li>
-          <li>Training & Supervision</li>
-          <li>Recruiting & Managing Security Staff</li>
-        </ul>
-      </section>
+        <section class="skills">
+          <h3>🛡️ Professional Skills</h3>
+          <ul>
+            <li>Security Management & Risk Control</li>
+            <li>Safety & Firefighting</li>
+            <li>Public Relations & Communication</li>
+            <li>Team Leadership & Crisis Management</li>
+            <li>Training & Supervision</li>
+            <li>Recruiting & Managing Security Staff</li>
+          </ul>
+        </section>
 
       <section class="career">
-        <h3>📂 Career History</h3>
-        <ul>
-          <li>Security Supervisor, Elsewedy Electric Infrastructure – Mostakbal Misr (2023)</li>
-          <li>Security Supervisor, JVACEE – Julius Nyerere Project, Tanzania (2019–2023)</li>
-          <li>Field Security Manager, Elsewedy Electric PSP – Beni Suef (2018)</li>
-          <li>Security Officer, Egyptian Armed Forces (1991–2016)</li>
-        </ul>
-      </section>
+  <h3>📂 Career History</h3>
+  <ul>
+    <li>
+      <strong>General Supervisor – Security</strong><br>
+      Elsewedy Electric Infrastructure – Mostakbal Misr Project<br>
+      <em>09/2023</em>
+    </li>
+    <li>
+      <strong>General Supervisor – Security</strong><br>
+      JVACEE – Julius Nyerere Hydropower Project – Tanzania<br>
+      <em>04/2019 to 02/2023</em>
+    </li>
+    <li>
+      <strong>Field Security Manager</strong><br>
+      Elsewedy Electric PSP – Beni Suef Power Plant – Egypt<br>
+      <em>12/2018</em>
+    </li>
+    <li>
+      <strong>General Supervisor – Security</strong><br>
+      Elsewedy Electric PSP – Beni Suef Power Plant – Egypt<br>
+      <em>01/2018</em>
+    </li>
+    <li>
+      <strong>Security Supervisor</strong><br>
+      Elsewedy Electric PSP – Beni Suef Power Plant – Egypt<br>
+      <em>10/2016</em>
+    </li>
+    <li>
+      <strong>Officer</strong><br>
+      Egyptian Armed Forces<br>
+      <em>07/1991 to 07/2016</em>
+    </li>
+  </ul>
+</section>
 
-      <section class="gallery">
-        <h3>📸 Work in Action</h3>
-        <div class="images-row">
-          <img src="work1.jpg" alt="Work 1" />
-          <img src="work2.jpg" alt="Work 2" />
-          <img src="work3.jpg" alt="Work 3" />
-          <img src="work4.jpg" alt="Work 4" />
-        </div>
-      </section>
 
-      <section class="info">
-        <h3>📚 Education & Info</h3>
-        <ul>
-          <li>🎓 Diploma – Industrial Secondary</li>
-          <li>🗓️ Date of Birth: 13/04/1975</li>
-          <li>👨‍👩‍👧‍👦 Married with 4 children</li>
-          <li>🌍 Nationality: Egyptian</li>
-          <li>🧭 Place of Birth: El-Gharbeya</li>
-          <li>🎖️ Military Service: Completed</li>
-          <li>🆔 National ID: 27504131601638</li>
-          <li>🕌 Religion: Muslim</li>
-        </ul>
-      </section>
+       <section class="gallery">
+  <h3>📸 Work in Action</h3>
+  <div class="images-row">
+    <img src="work1.jpg" alt="Work 1" />
+    <img src="work2.jpg" alt="Work 2" />
+    <img src="work3.jpg" alt="Work 3" />
+    <img src="work4.jpg" alt="Work 4" />
+    <img src="work5.jpg" alt="Work 5" />
+    <img src="work6.jpg" alt="Work 6" />
+    <img src="work7.jpg" alt="Work 7" />
+    <img src="work8.jpg" alt="Work 8" />
+    <img src="work9.jpg" alt="Work 9" />
+    <img src="work10.jpg" alt="Work 10" />
+    <img src="work11.jpg" alt="Work 11" />
+    <img src="work12.jpg" alt="Work 12" />
+    <img src="work13.jpg" alt="Work 13" />
+    <img src="work14.jpg" alt="Work 14" />
+    <img src="work15.jpg" alt="Work 15" />
+    <img src="work16.jpg" alt="Work 16" />
+    <img src="work17.jpg" alt="Work 17" />
+    <img src="work18.jpg" alt="Work 18" />
+    <img src="work19.jpg" alt="Work 19" />
+    <img src="work20.jpg" alt="Work 20" />
+  </div>
+</section>
 
-      <footer>
-        <p>© 2025 Dr. Zeyad El-Sayed | All rights reserved</p>
-      </footer>
+        <section class="info">
+          <h3>📚 Education & Info</h3>
+          <ul>
+            <li>🎓 Diploma – Industrial Secondary</li>
+            <li>🗓️ Date of Birth: 13/04/1975</li>
+            <li>👨‍👩‍👧‍👦 Married with 4 children</li>
+            <li>🌍 Nationality: Egyptian</li>
+            <li>🧭 Place of Birth: El-Gharbeya</li>
+            <li>🎖️ Military Service: Completed</li>
+            <li>🆔 National ID: 27504131601638</li>
+            <li>🕌 Religion: Muslim</li>
+          </ul>
+        </section>
+
+        <footer>
+          <p>© 2025 Dr. Zeyad El-Sayed | All rights reserved</p>
+        </footer>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- سكريبت -->
+    <script>
+      function closePopup() {
+        document.getElementById("welcome-popup").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+
+        const audio = document.getElementById("welcome-audio");
+        if (audio) {
+          audio.volume = 0.2;
+          audio.play().catch((e) => {
+            console.warn("Autoplay failed: ", e);
+          });
+        }
+      }
+    </script>
   </body>
 </html>
